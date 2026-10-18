@@ -1,0 +1,9 @@
+[build]
+  publish = "."
+  # 빌드 과정 없는 정적 사이트입니다 (build command 불필요)
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Cache-Control = "public, max-age=0, must-revalidate"
